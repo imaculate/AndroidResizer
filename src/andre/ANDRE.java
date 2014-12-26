@@ -354,10 +354,11 @@ public class ANDRE extends Application {
         fileChooser.setInitialDirectory(
                 new File(System.getProperty("user.home")));
         fileChooser.getExtensionFilters().addAll(
+                 new FileChooser.ExtensionFilter("PNG", "*.png"),
                 new FileChooser.ExtensionFilter("GIF", "*.gif"),
                 new FileChooser.ExtensionFilter("WebP", "*.webp"),
                 new FileChooser.ExtensionFilter("JPEG", "*.jpg"),
-                new FileChooser.ExtensionFilter("PNG", "*.png"),
+               
                 
                 new FileChooser.ExtensionFilter("BMP", "*.bmp"));
                
